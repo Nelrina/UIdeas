@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.lollie.uideas.MainActivity">
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cupcake Symphony"
+            android:layout_centerHorizontal="true"
+            android:textSize="32sp"
+            android:textColor="#ff0066"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/swirls"
+            android:src="@drawable/ornement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:layout_below="@id/titre" />
+
+        <ImageView
+            android:id="@+id/img_loc"
+            android:src="@drawable/location"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/swirls"
+            />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Baker's street - LONDON"
+            android:textColor="#ff0066"
+            android:layout_toRightOf="@id/img_loc"
+            android:layout_below="@id/swirls"/>
+
+        <ImageView
+            android:id="@+id/img_web"
+            android:src="@drawable/web"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/img_loc"
+            />
+
+        <TextView
+            android:id="@+id/web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.cupcake-symphony.com"
+            android:textColor="#ff0066"
+            android:layout_toRightOf="@id/img_web"
+            android:layout_below="@id/img_loc"/>
+
+        <ImageView
+            android:id="@+id/img_mail"
+            android:src="@drawable/mail"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/img_web"
+            />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contact@cupcake-symphony.com"
+            android:textColor="#ff0066"
+            android:layout_toRightOf="@id/img_mail"
+            android:layout_below="@id/img_web"/>
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:src="@drawable/phone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/img_mail"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 88 77 66 22"
+            android:textColor="#ff0066"
+            android:layout_toRightOf="@id/img_phone"
+            android:layout_below="@id/img_mail"/>
+
+        <LinearLayout
+            android:id="@+id/bestCakes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/img_phone">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/cake1"
+                            android:src="@drawable/cupcake1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/cake_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Raiponce"
+                            android:layout_toRightOf="@id/cake1"
+                            android:textColor="#ff0066"
+                            android:layout_marginTop="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/cake2"
+                            android:src="@drawable/cupcake2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/cake1"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/cake_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beauty and the Beast"
+                            android:layout_toRightOf="@id/cake2"
+                            android:layout_below="@id/cake1"
+                            android:textColor="#ff0066"
+                            android:layout_marginTop="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/cake3"
+                            android:src="@drawable/cupcake3"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/cake2"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/cake_name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alice in Wonderland"
+                            android:layout_toRightOf="@id/cake3"
+                            android:layout_below="@id/cake2"
+                            android:textColor="#ff0066"
+                            android:layout_marginTop="12dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/cake4"
+                            android:src="@drawable/cupcake4"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/cake_name4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sleeping Beauty"
+                            android:layout_toRightOf="@id/cake4"
+                            android:textColor="#ff0066"
+                            android:layout_marginTop="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/cake5"
+                            android:src="@drawable/cupcake5"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/cake4"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/cake_name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snow White"
+                            android:layout_toRightOf="@id/cake5"
+                            android:layout_below="@id/cake4"
+                            android:textColor="#ff0066"
+                            android:layout_marginTop="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/cake6"
+                            android:src="@drawable/cupcake6"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_below="@id/cake5"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:id="@+id/cake_name6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Little mermaid"
+                            android:layout_toRightOf="@id/cake6"
+                            android:layout_below="@id/cake5"
+                            android:textColor="#ff0066"
+                            android:layout_marginTop="12dp"/>
+                </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/bestCakes" />
+</RelativeLayout>
