@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.lollie.uideas.MainActivity">
+
+    <ImageView
+        android:src="@drawable/moon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fly me to the Moon"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:src="@drawable/star2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="64dp"
+        />
+
+    <ImageView
+        android:src="@drawable/star2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Let me play among the stars"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
